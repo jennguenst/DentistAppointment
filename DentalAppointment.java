@@ -19,7 +19,7 @@ public class DentalAppointment{
         this.patientOne  = new Person(firstName, lastName, zip);
         this.dateOfAppt  = new Date(month, day, year);
         this.timeOfAppt  = new Time(hour, minute);
-        while(duration > 240 && duration < 0){
+        while(duration > 240 || duration < 0){
           System.out.print("Let's try again. How long is your appointment: ");
           duration = sc.nextInt();
           sc.nextLine();
